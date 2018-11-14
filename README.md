@@ -48,7 +48,7 @@ By changing the id number in `https://104.198.208.81/red/public/salesperson.php?
 Vulnerability #2: Cross-Site Request Forgery
 By submitting a form in the feedback section to change data within staff which can only be originally modified only by a logged in user.
 The form contains the following:
-`<html>
+` <html>
   <head>
     <title>Page Not Found!</title>
   </head>
@@ -61,7 +61,7 @@ The form contains the following:
     </form>
     <iframe name="hidden_results" style="display: none;"></iframe>
   </body>
-</html>`
+</html> `
 
 <img src="red_CSRF.gif" width="800">
 
