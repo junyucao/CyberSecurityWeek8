@@ -18,10 +18,12 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1: SQL Injection
 Blue salesperson url `https://35.184.88.145/blue/public/salesperson.php?id=1`, the id is vulnerable to sql injections as shown when we insert ' OR SLEEP(5)=0--' in place of id number.
+
 <img src="blue_SQLI.gif" width="800">
 
 Vulnerability #2: Session Hijacking/Fixation
 By logging into account from browser1 we can get the PHPSESSIONID. Someone can steal PHPSESSIONID and in theirbroswer, changed the PHPSESSIONID to match that of browser1 to access pages without the need of login.
+
 <img src="blue_SessionHijacking.gif" width="800">
 
 ## Green
@@ -33,12 +35,14 @@ The login page give bold message when an exisitng username login attempt was mad
 Vulnerability #2: Cross-Site Scripting
 Feedback section of contact us is vulnerable to XSS attacks as shown when we have 
 `<script>alert('JunYu found the XSS!');</script>` as input. When the user logs in, the javascript is ran. 
+
 <img src="green_Cross-Site Scripting.gif" width="800">
 
 ## Red
 
 Vulnerability #1: Insecure Direct Object Reference
 By changing the id number in `https://104.198.208.81/red/public/salesperson.php?id=1` we can access sensitive information that are otherwise unavailable.
+
 <img src="red_IDOR.gif" width="800">
 
 Vulnerability #2: Cross-Site Request Forgery
@@ -58,6 +62,7 @@ The form contains the following:
     <iframe name="hidden_results" style="display: none;"></iframe>
   </body>
 </html>`
+
 <img src="red_CSRF.gif" width="800">
 
 ## Notes
